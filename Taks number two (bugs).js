@@ -25,7 +25,7 @@ function text(){
       if (arguments[i] >= 0){
         a[i] = nums.map(el => text[el]).join(", ");
       } else if (arguments[i] < 0){
-        let result = arguments[i]-arguments[i]-arguments[i];
+        let result = arguments[i]-arguments[i]*2;
         a[i] = nums.map(el => minus + text[result]).join(", ");
       }
   }

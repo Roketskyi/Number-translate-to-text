@@ -21,7 +21,7 @@ function text(){
   for(let i = 0; i < arguments.length; i++){
       nums = [];
       findAllNums(arguments[i]);
-      a[i] = nums.map(el => text[el]).join(",");
+      a[i] = nums.map(el => text[el]).join(", ");
   }
 
   return a;

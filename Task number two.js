@@ -1,7 +1,6 @@
 let nums = []
-function findAllNums(num) {
-  //const text = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 
+function findAllNums(num) {
   if (num >= 10) {
     if (num / 10 > 10) {
       findAllNums(Math.floor(num / 10));
@@ -23,7 +22,6 @@ function text(){
       findAllNums(arguments[i]);
       a[i] = nums.map(el => text[el]).join(", ");
   }
-
   return a;
 }
 
